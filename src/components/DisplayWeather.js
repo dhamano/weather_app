@@ -17,14 +17,22 @@ const DisplayWeather = (props) => {
       <div>loading...</div>
     )
   }
+  
+  if(props.error) {
+    return (
+      <p className="error">
+        {props.error.status} : {props.error.statusText}
+      </p>
+    )
+  }
 
   return(
     <main>
-      <h1>Weather for {props.weather.title}</h1>
+      <h1>Weather for {props.weather.title}, {props.weather.parent.title}</h1>
       <ul className="five-day-forecast">
         {
-          props.weather.consolidated_weather.map( day => {
-            return <WeatherDayDisplay day={day} />
+          props.weather.consolidated_weather.map( (day,i) => {
+            return <WeatherDayDisplay day={day} key={'day-' + i.toString().padStart(2,"0")}/>
           })
         }
       </ul>
