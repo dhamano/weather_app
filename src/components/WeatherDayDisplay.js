@@ -1,8 +1,6 @@
 import React from 'react';
 
 const WeatherDayDisplay = props => {
-  console.log('the props',props);
-  console.log('the props',props.day.weather_state_abbr);
   const dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
   let date = new Date(props.day.applicable_date);
