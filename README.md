@@ -1,52 +1,12 @@
-# Module Project: Async Redux - React Redux App
+# 5 Day Weather forecast from www.metaweather.com/api/
 
-This project allows you to practice the concepts and techniques learned in this module and apply them in a concrete project. This module explored asyncronous action creators in Redux. In your project you will demonstrate proficiency of these subjects and principles by building an app from scratch that consumes and API of your choosing, and displays data fetched from that API.
-
-## Instructions
-
-**Read these instructions carefully. Understand exactly what is expected _before_ starting this project.**
-
-### Commits
-
-Commit your code regularly and meaningfully. This helps both you and your team lead in case you ever need to return to old code for any number of reasons.
-
-### Description
-
-In this project you'll take this crypto currency tracker app and build two custom hooks that, when composed together, will allow users to set and persist a dark mode preference.
-
-## Project Set Up
-
-- [x] Create a forked copy of this project.
-- [x] Add your team lead as collaborator on Github.
-- [x] Clone your OWN version of the repository in your terminal
-- [x] CD into the project base directory `cd react-redux-app`
-- [x] Use CRA to create a new React app, the `cd` into the react app
-- [x] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
-- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [x] Push commits: git push origin `<firstName-lastName>`.
-
-Follow these steps for completing your project.
-
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
-
-## Minimum Viable Product
-
-- [x] Build a React Redux app
-- [x] Fetch data inside an async action creator from an API of your choosing
-- [x] Add the data from the API to the Redux store
-- [x] Display the data from the store in a component
-- [x] _Some_ styling must be applied. It can be basic, but the app must not only use browser default stylings
-
-## Directions
-
-This is the chance to let your skills shine! You have learned _sooo_ much the last month, and now you get to put all of your hard-earned skills to work. Choose an open api ([this list](https://github.com/public-apis/public-apis) has a lot of great ones - look for ones with `Auth: no` and `HTTPS: yes` - or just do a google search for `open apis`). Protip - don't take too long choosing an API. Pick one that looks interesting, and get building.
-
-Once you have chosen an API to consume, build an app that makes sense for the data you will be retrieving. Have fun with this. You get to be the creative mind. You get to make all the decisions here. I'm excited to see what you build!
-
-## Stretch Problems
-
-Take the app as far as you can go! Styling, redux hooks, another API, an input to fetch data dynamically, etc. Work on it, improve it until the end of the day. If you find yourself finishing with time left to spare, jump on with your TL or fellow student to ask them what feature they think you should build next. Good luck!
+## To-do
+  - [x] Get JSON data from metaweather
+  - [x] Display location of weather
+  - [x] Display 5 Day forecast (min/max temp, humitidy, day, type of weather, day of week)
+  - [x] Display weather icons
+  - [x] Have search functionality by city
+  - [ ] Loader icon for main page
+  - [ ] Have toggle for displaying celcius/fahrenheit values • __(24°C × 9/5) + 32 = 75.2°F__
+  - [ ] Make mobile look better
+  = [ ] Search sticky to bottom/top
