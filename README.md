@@ -6,7 +6,7 @@
   - [x] Display 5 Day forecast (min/max temp, humitidy, day, type of weather, day of week)
   - [x] Display weather icons
   - [x] Have search functionality by city
-  - [ ] Loader icon for main page
-  - [ ] Have toggle for displaying celcius/fahrenheit values • __(24°C × 9/5) + 32 = 75.2°F__
+  - [x] Loader icon for main page
+  - [x] Have toggle for displaying celcius/fahrenheit values • __(24°C × 9/5) + 32 = 75.2°F__
   - [ ] Make mobile look better
   = [ ] Search sticky to bottom/top

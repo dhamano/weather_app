@@ -60,6 +60,12 @@ export default ( state = initialState, action ) => {
           queryError: '',
           isFetchingQuery: false
         }
+      case WOEID_QUERY_FAILURE:
+        return {
+          ...state,
+          queryError: action.payload,
+          isFetchingQuery: false
+        }
     default:
       return state;
   }

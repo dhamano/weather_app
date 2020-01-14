@@ -3,7 +3,11 @@ import React from 'react';
 const WeatherDayDisplay = props => {
   const dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-  let date = new Date(props.day.applicable_date);
+  let date = new Date(props.day.applicable_date),
+      minTemp = props.day.min_temp,
+      maxTemp = props.day.max_temp,
+      minFTemp = (minTemp * (9/5)) + 32,
+      maxFTemp = (maxTemp * (9/5)) + 32;
 
   return (
     <li>
@@ -21,8 +25,8 @@ const WeatherDayDisplay = props => {
           </thead>
           <tbody>
             <tr>
-              <td>{Math.round(props.day.min_temp)}&deg;</td>
-              <td>{Math.round(props.day.max_temp)}&deg;</td>
+              <td>{Math.round(props.isCelsius ? minTemp : minFTemp)}&deg;{props.isCelsius ? 'C' : 'F'}</td>
+              <td>{Math.round(props.isCelsius ? maxTemp : maxFTemp)}&deg;{props.isCelsius ? 'C' : 'F'}</td>
               <td>{props.day.humidity}%</td>
             </tr>
           </tbody>
