@@ -11,7 +11,7 @@ export const getWeatherData = () => dispatch => {
   dispatch({ type: WEATHER_FETCH_START });
   return axios.get(`${apiHost}/location/${woeid}`)
     .then( res => {
-      console.log(res.data);
+      // console.log(res.data);
       dispatch({ type: WEATHER_FETCH_SUCCESS, payload: res.data})
     })
     .catch( err => {
@@ -47,7 +47,7 @@ export const getWoeidWeather = woeid => dispatch => {
   dispatch({ type: WOEID_QUERY_START });
   return axios.get(`${apiHost}/location/${woeid}/`)
     .then( res => {
-      console.log('query woeid',res)
+      // console.log('query woeid',res)
       dispatch({ type: WOEID_QUERY_SUCCESS, payload: res.data })
     })
     .catch( err => {
