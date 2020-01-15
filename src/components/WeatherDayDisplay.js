@@ -12,7 +12,7 @@ const WeatherDayDisplay = props => {
   return (
     <li>
       <div className="class-card">
-        <h2>{dayOfWeek[date.getDay()]}</h2>
+        <h2>{dayOfWeek[date.getUTCDay()]}</h2>
         <img src={`//www.metaweather.com/static/img/weather/${props.day.weather_state_abbr}.svg`} alt={`${props.day.weather_state_name}`} width="50" />
         <h3>{props.day.weather_state_name}</h3>
         <table>
